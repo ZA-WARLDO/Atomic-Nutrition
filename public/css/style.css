@@ -1,0 +1,153 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:wght@600&family=Poppins:wght@700&family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap');
+/* 
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+} */
+
+.nav-link
+{
+    
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+
+.navbar-nav .active{
+    color:#87D1AE;
+}
+
+.online-color
+{
+    color:#FAF7FF;
+}
+
+.healthy-green-bg
+{
+    background-color:#87D1AE;
+}
+
+
+.cookie-monster-color
+{
+    color: #8787F1;
+}
+
+.cookie-monster-bg
+{
+    background-color: #8787F1;
+}
+
+.online-bg
+{
+    background-color: #FAF7FF;
+}
+
+.test
+{
+    
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-home
+{
+    padding-top: 5%;
+    
+}
+
+.button-shape
+{
+    padding: 12px 100px 12px 100px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.qoute
+{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+
+.lesson-title
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.header
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #8787F1;
+    font-size: 70px;
+}
+
+
+.workout-progress
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 140px;
+}
+
+.workout-button
+{
+    text-transform: uppercase;
+    background-color: #8787F1;
+    border: solid 3px black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2pc;
+    font-family: 'Roboto', 'Helvetica Neue';
+    font-size: 22px;
+    margin-right: 0px;
+}
+
+.workout-button-not-done
+{
+    text-transform: uppercase;
+    background-color: white;
+    border: solid 3px black;
+    color: #8787F1;
+    padding: 10px 20px;
+    border-radius: 2pc;
+    font-family: 'Roboto', 'Helvetica Neue';
+    font-size: 22px;
+    margin-right: 0px;
+}
+
+
+
+.info_header
+{
+    font-family: 'Poppins';
+    text-align: start;
+    margin-left: 20%;
+}
+
+.form-template
+{
+    width: 50%;
+}
+
+.form-button-cookie
+{
+    color: white;
+    background-color: #8787F1;
+    text-decoration: none;
+}
+
+.form-button-cookie:hover
+{
+    color: white;
+    background-color: #8787F1;
+    text-decoration: none;
+}
