@@ -131,9 +131,14 @@
                                                 {
                                                     echo "Female";
                                                 }
-                                                else{
+                                                if ($user->sex == 'M') {
                                                     echo "Male";
+                                                } else {
+                                                    echo "Others";
                                                 }
+        
+                                                   
+                                                
                                                 ?>
 
                                             </h5>

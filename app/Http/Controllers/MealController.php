@@ -77,7 +77,7 @@ class MealController extends Controller
     //show here the form to edit the product
     public function edit(Meal $meal)
     {
-        //
+        return view('editSummary');
     }
 
     /**
@@ -102,8 +102,15 @@ class MealController extends Controller
      */
 
     //remove a meal
-    public function destroy(Meal $meal)
+    public function destroy($id)
     {
-        //
+
+
+        $meal = Meal::find($id);
+
+
+        $meal->delete();
+        return redirect("home");
     }
+
 }

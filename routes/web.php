@@ -40,3 +40,6 @@ Route::post('/addFood', [MealController::class, 'store'])->name('store');
 //     return view('registerPage1');
 // });
 
+
+Route::delete('/Summary/delete/{id}', [MealController::class, 'destroy'])->name('delete');
+Route::get('/editFood', [MealController::class, 'edit'])->name('editFood');

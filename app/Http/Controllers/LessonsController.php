@@ -106,7 +106,7 @@ class LessonsController extends Controller
      */
     public function destroy(Lessons $lessons)
     {
-        //
+        
     }
 
 }

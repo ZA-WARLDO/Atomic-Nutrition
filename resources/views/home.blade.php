@@ -3,7 +3,7 @@
 @section('content')
 <!-- This is a modal -->
 <div class="modal fade" id="foodDiary">
-    <div class="modal-dialog modal-md">
+    <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <form action=""></form>
                 <div class="modal-header">
@@ -28,26 +28,48 @@
                             </div>
                             
                             @foreach($meals->where('meal_time', 'Breakfast') as $meal)
-                                <div class="row">
+                                <div class="row m-2">
                                     <div class="col">
                                         {{$meal['meal_name']}}
                                     </div>
                                     <div class="col">
                                         {{$meal['calories']}}
                                     </div>
+                                    <div class="col">
+                                        <a href="editFood" class="btn-dark-green text-decoration-none ">Edit</a>
+                                    </div>
+                                    <div class="col">
+                                        <form action="{{route('delete', ['id' => $meal['id']])}}" method="post">
+                                            @csrf
+                                            @method("DELETE")
+                                            <button type="submit" value="Delete" name="submit" class="btn btn-danger rounded-0 text-decoration-none " onclick="return confirm('Are you sure to delete?')">Delete </button>
+                                        </form>
+                                    </div>
+
                                 </div>
                             @endforeach
                         </div>
                         <div class="col">
                             <h3>Lunch</h3>
                             @foreach($meals->where('meal_time', 'Lunch') as $meal)
-                                <div class="row">
+                            <div class="row m-2">
                                     <div class="col">
                                         {{$meal['meal_name']}}
                                     </div>
                                     <div class="col">
                                         {{$meal['calories']}}
                                     </div>
+                                    <div class="col">
+                                        <a href="editFood" class="btn-dark-green text-decoration-none ">Edit</a>
+                                    </div>
+                                    <div class="col">
+                                        <form action="{{route('delete', ['id' => $meal['id']])}}" method="post">
+                                            @csrf
+                                            @method("DELETE")
+                                            <button type="submit" value="Delete" name="submit" class="btn btn-danger rounded-0 text-decoration-none " onclick="return confirm('Are you sure to delete?')">Delete </button>
+                                        </form>
+                                    </div>
+
                                 </div>
                             @endforeach
                         </div>
@@ -57,13 +79,24 @@
                         <div class="col-6">
                             <h3>Dinner</h3>
                             @foreach($meals->where('meal_time', 'Dinner') as $meal)
-                                <div class="row">
+                            <div class="row m-2">
                                     <div class="col">
                                         {{$meal['meal_name']}}
                                     </div>
                                     <div class="col">
                                         {{$meal['calories']}}
                                     </div>
+                                    <div class="col">
+                                        <a href="editFood" class="btn-dark-green text-decoration-none ">Edit</a>
+                                    </div>
+                                    <div class="col">
+                                        <form action="{{route('delete', ['id' => $meal['id']])}}" method="post">
+                                            @csrf
+                                            @method("DELETE")
+                                            <button type="submit" value="Delete" name="submit" class="btn btn-danger rounded-0 text-decoration-none " onclick="return confirm('Are you sure to delete?')">Delete </button>
+                                        </form>
+                                    </div>
+
                                 </div>
                             @endforeach
                         </div>
@@ -74,7 +107,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button class="btn btn-primary">Edit</button>
+                    <a href="edit"><button class="btn btn-primary">Edit</button></a>
                 </div>
             </form>
         </div>
